@@ -1,0 +1,42 @@
+/*
+* Developer by Machain
+* Zooga 
+* v1.0
+* © Copyright 2019
+*/
+* {
+    box-sizing: border-box;
+}
+.zooga {
+    position: relative;
+    width: 560px;
+    height: 500px;
+    background-color: rgb(255, 255, 255); 
+}
+.zooga-visor {
+    margin-left: 60px;
+}
+.zooga-thumbs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 4px
+}
+.zooga-thumb {
+    cursor: pointer;
+    width: 52px;
+    height: 52px;
+    margin-bottom: 5px;
+    border: 1px solid #dddddd;
+}
+.zooga-thumb.active {
+    border: 2px solid #006ef6;
+}
+.zooga-thumb img {
+    height: 50px;
+    width: 50px;
+}
+.zooga-thumb.active img {
+    height: 48px;
+    width: 48px;
+}

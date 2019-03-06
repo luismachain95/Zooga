@@ -1,25 +1,53 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Zooga from './Components/Zooga/Zooga';
 import './App.css';
 
 class App extends Component {
+
+  constructor(props){
+    super(props)
+    this.state= {
+      images: [
+        {
+            image: "https://luismachain95.github.io/Caro/image/shoes1.jpg",
+            thumb: "https://luismachain95.github.io/Caro/image/shoes1.jpg"
+        },
+        {
+            image: "https://luismachain95.github.io/Caro/image/shoes2.jpg",
+            thumb: "https://luismachain95.github.io/Caro/image/shoes2.jpg"
+        },
+        {
+            image: "https://luismachain95.github.io/Caro/image/shoes3.jpg",
+            thumb: "https://luismachain95.github.io/Caro/image/shoes3.jpg"
+        },
+        {
+            image: "https://luismachain95.github.io/Caro/image/shoes4.jpg",
+            thumb: "https://luismachain95.github.io/Caro/image/shoes4.jpg"
+        },
+        {
+          image: "https://luismachain95.github.io/Caro/image/shoes1.jpg",
+          thumb: "https://luismachain95.github.io/Caro/image/shoes1.jpg"
+        },
+        {
+            image: "https://luismachain95.github.io/Caro/image/shoes2.jpg",
+            thumb: "https://luismachain95.github.io/Caro/image/shoes2.jpg"
+        },
+        {
+            image: "https://luismachain95.github.io/Caro/image/shoes3.jpg",
+            thumb: "https://luismachain95.github.io/Caro/image/shoes3.jpg"
+        },
+        {
+            image: "https://luismachain95.github.io/Caro/image/shoes4.jpg",
+            thumb: "https://luismachain95.github.io/Caro/image/shoes4.jpg"
+        }
+    ],
+    }
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="content"> 
+        <Zooga images={this.state.images}/>
       </div>
     );
   }
